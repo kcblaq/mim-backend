@@ -13,6 +13,7 @@
     "prisma:migrate": "prisma migrate dev --schema=./prisma",
     "prisma:studio": "prisma studio",
     "prisma:migrate:prod": "prisma migrate deploy --schema=./prisma",
+     "postinstall": "npm run prisma:generate && npm run build",
     "test": "jest",
     "test:watch": "jest --watch"
   },
